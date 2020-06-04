@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+    <script src="plugins/swiper/swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="page-header scroll-block" id="header">
+            <div class="page-header__top">
+                <img src="img/logo.png" alt="" class="hidden-mobile page-header__logo-small">
+                <nav class="menu">
+                    <button class="menu__toggle menu__toggle--open"><svg height="384pt" fill="#ffffff" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg><span class="visually-hidden">Открыть меню</span></button>
+                    <div class="menu__wrapper">
+                        <div class="menu__top">
+                            <a href="tel:+78314336934" class="page-header__contacts page-header__contacts--phone">+7 (831) 433
+                                69 34</a>
+                                <button class="menu__toggle menu__toggle--close"><svg xmlns="http://www.w3.org/2000/svg" width="15.438" height="15.438" viewBox="0 0 15.438 15.438" fill="#ffffff">
+                                    <path class="cls-1" d="M284.293,35.292l1.414,1.414-14,14-1.414-1.414Zm-12.586,0-1.414,1.414,14,14,1.414-1.414Z" transform="translate(-270.281 -35.281)"/>
+                                  </svg><span class="visually-hidden">Закрыть меню</span></button>
+                        </div>
+                        <ul class="menu__items">
+                            <li class="menu__item active"><a href="javascript:void(0)">Главная</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)">О нас</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)">Меню</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)">Новости</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)">Акции</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)">Галерея</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)">Гостевая книга</a></li>
+                            <li class="menu__item"><a href="javascript:void(0)">Контакты</a></li>
+                        </ul>
+                        <div class="page-header__social">
+                            <p class="page-header__contacts page-header__contacts--adress">
+                                Нижний Новгород,<br>ул. Большая Покровская, д. 46
+                            </p>
+                            <p class="page-header__contacts page-header__contacts--clock">
+                                Ежедневно с 11:00 по 22:00
+                            </p>
+                            <a href="javascript:void(0)" class="page-header__instagramm"><img src="img/instagramm.png"
+                                    alt=""><span class="visually-hidden">Инстаграмм</span></a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="page-header__social">
+                    <p class="page-header__contacts page-header__contacts--adress">
+                        Нижний Новгород,<br>ул. Большая Покровская, д. 46
+                    </p>
+                    <p class="page-header__contacts page-header__contacts--clock">
+                        Ежедневно<br>с 11:00 по 22:00
+                    </p>
+                    <a href="tel:+78314336934" class="page-header__contacts page-header__contacts--phone">+7 (831) 433
+                        69 34</a>
+                    <a href="javascript:void(0)" class="page-header__instagramm"><img src="img/instagramm.png"
+                            alt=""><span class="visually-hidden">Инстаграмм</span></a>
+                </div>
+            </div>
+            <div class="page-header__caption">
+                <img src="img/logo-big.png" alt="" class="page-header__logo">
+                <h1 class="page-header__title">Легендарное кафе<br>в Нижнем Новгороде</h1>
+                <p class="page-header__contacts page-header__contacts--adress">
+                    Нижний Новгород,<br>ул. Большая Покровская, д. 46
+                </p>
+                <p class="page-header__contacts page-header__contacts--clock">
+                    Ежедневно<br>с 11:00 по 22:00
+                </p>
+                <a href="javascript:void(0)" class="page-header__link">Расположение столов</a>
+            </div>
+        </header>
+        <main class="scroll-block">
+            <div class="page-header__top page-header__top--main">
+                <img src="img/logo-big.png" alt="" class="page-header__logo-small">
+                <nav class="menu menu--main">
+                    <button class="menu__toggle menu__toggle--main menu__toggle--open"><svg height="384pt" fill="#ffffff" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg><span class="visually-hidden">Открыть меню</span></button>
+                    <ul class="menu__items">
+                        <li class="menu__item active"><a href="javascript:void(0)">Главная</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)">О нас</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)">Меню</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)">Новости</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)">Акции</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)">Галерея</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)">Гостевая книга</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="page-header__social">
+                    <p class="page-header__contacts page-header__contacts--adress hidden-mobile">
+                        Нижний Новгород,<br>ул. Большая Покровская, д. 46
+                    </p>
+                    <p class="page-header__contacts page-header__contacts--clock hidden-mobile">
+                        Ежедневно<br>с 11:00 по 22:00
+                    </p>
+                    <a href="tel:+78314336934" class="page-header__contacts page-header__contacts--phone">+7 (831) 433
+                        69 34</a>
+                    <a href="javascript:void(0)" class="page-header__instagramm"><img src="img/instagramm.svg"
+                            alt=""><span class="visually-hidden">Инстаграмм</span></a>
+                </div>
+            </div>
+            <section class="page-section">
+                <div class="page-section__half page-section__half--tripadvisor">
+                    <img src="img/background-mini-3.png" alt="" class="img-cover">
+                    <div class="tripadvisor tripadvisor--fixed">
+                        <span class="tripadvisor__library">
+                            Библиотека
+                        </span>
+                        <img src="img/tripadvisor.png" alt="" class="tripadvisor__img">
+                        <div class="rating">
+                            <span class="visually-hidden">Оценка 4,5 из 5</span>
+                            <div class="rating__mark">
+                                <div class="rating__item"><svg viewBox="0 0 32 32">
+                                        <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                                    </svg></div>
+                                <div class="rating__item"><svg viewBox="0 0 32 32">
+                                        <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                                    </svg></div>
+                                <div class="rating__item"><svg viewBox="0 0 32 32">
+                                        <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                                    </svg></div>
+                                <div class="rating__item"><svg viewBox="0 0 32 32">
+                                        <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                                    </svg></div>
+                                <div class="rating__item"><svg viewBox="0 0 32 32">
+                                        <circle r="16" cx="16" cy="16" stroke-dasharray="50 100"></circle>
+                                    </svg></div>
+                            </div>
+                            <p class="rating__quantity">
+                                <span>947</span>
+                                отзывов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-section__half page-section__half--text">
+                    <h2>О кафе</h2>
+                    <div class="page-section__text">
+                        <p>Кафе Biblioteca – это место, где Вы можете насладиться как физической, так и духовной пищей
+                            одновременно. В ожидании ароматной пиццы или пышущей жаром лазаньи, гости имеют возможность
+                            погрузиться в чтение книг самой разной стилистики, начиная от «Учитесь правильно говорить»
+                            и заканчивая «Полным собранием сочинений» Ленина.
+                        </p>
+                        <p>Кафе Biblioteca – это место, где Вы можете насладиться как физической, так и духовной пищей
+                            одновременно. В ожидании ароматной пиццы или пышущей жаром лазаньи, гости имеют возможность
+                            погрузиться в чтение книг самой разной стилистики, начиная от «Учитесь правильно говорить»
+                            и заканчивая «Полным собранием сочинений» Ленина.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--bg-white">
+                <div class="page-section__half page-section__half--text">
+                    <div class="quote">
+                        <cite class="quote__cite">– Шеф-повар, Потапов Дмитрий</cite>
+                        <blockquote class="quote__blockquote">Мы покажем Вам кухню - какой её любят в Италии!
+                        </blockquote>
+                    </div>
+                    <p>Шеф-повар Библиотеки предлагает блюда исключительно из ингредиентов растительного
+                        происхождения. Называя себя «кафе», мы делаем акцент на непринужденной атмосфере
+                        и демократичных ценах нашего заведения. При этом наш подход к качеству подбора
+                        ингредиентов, ассортимент меню и интерьер соответствуют высокому уровню.</p>
+                </div>
+                <div class="page-section__half">
+                    <img src="img/сhief.png" alt="" class="img-cover">
+                </div>
+            </section>
+            <section class="page-section page-section--column" id="menu">
+                <h2>Наше меню</h2>
+                <p class="page-section__description">Кафе Biblioteca – это место, где Вы можете насладиться как
+                    физической, так и духовной пищей одновременно.
+                    В ожидании ароматной пиццы
+                    или пышущей жаром лазаньи, гости имеют возможность погрузиться в чтение книг самой разной
+                    стилистики,
+                    начиная от «Учитесь правильно говорить»
+                    и заканчивая «Полным собранием сочинений» Ленина.</p>
+                <ul class="page-section__list food">
+                    <li class="food__item"><img src="img/food-1.png" alt="" class="food__img">
+                        <p class="food__name">Салат цезарь <span class="food__price">200 ₽</span></p>
+                    </li>
+                    <li class="food__item"><img src="img/food-2.png" alt="" class="food__img">
+                        <p class="food__name">Стейк из мраморной говядины<span class="food__price">600 ₽</span></p>
+                    </li>
+                    <li class="food__item"><img src="img/food-3.png" alt="" class="food__img">
+                        <p class="food__name">Пеперони <span class="food__price">650 ₽</span></p>
+                    </li>
+                    <li class="food__item"><img src="img/food-4.png" alt="" class="food__img">
+                        <p class="food__name">Салат цезарь <span class="food__price">200 ₽</span></p>
+                    </li>
+                    <li class="food__item"><img src="img/food-5.png" alt="" class="food__img">
+                        <p class="food__name">Салат цезарь <span class="food__price">200 ₽</span></p>
+                    </li>
+                    <li class="food__item"><img src="img/food-6.png" alt="" class="food__img">
+                        <p class="food__name">Стейк из мраморной говядины <span class="food__price">600 ₽</span></p>
+                    </li>
+                    <li class="food__item"><img src="img/food-7.png" alt="" class="food__img">
+                        <p class="food__name">Пеперони <span class="food__price">650 ₽</span></p>
+                    </li>
+                    <li class="food__item"><img src="img/food-8.png" alt="" class="food__img">
+                        <p class="food__name">Салат цезарь <span class="food__price">200 ₽</span></p>
+                    </li>
+                </ul>
+                <div class="page-section__more">
+                    <a href="javascript:void(0)" class="page-section__link">Посмотреть полное меню</a>
+                </div>
+            </section>
+            <section class="page-section page-section--column">
+                <h2>Акции и новости нашего кафе</h2>
+                <p class="page-section__description">Кафе Biblioteca – это место, где Вы можете насладиться как
+                    физической, так и духовной пищей одновременно.
+                    В ожидании ароматной пиццы
+                    или пышущей жаром лазаньи, гости имеют возможность погрузиться в чтение книг самой разной
+                    стилистики,
+                    начиная от «Учитесь правильно говорить»
+                    и заканчивая «Полным собранием сочинений» Ленина.</p>
+                <div class="news">
+                    <article class="news__item news__item--background"
+                        style="background-image: url('img/background-mini.png')">
+                        <time class="date">16.01.2020</time>
+                        <div>
+                            <h3>Дневная скидка 20%</h3>
+                            <p>В будние дни с 11:00 до 15:00
+                                действует 20% скидка на все меню!!!</p>
+                            <a href="javascript:void(0)" class="news__more">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="news__item">
+                        <time class="news__date">16.01.2020</time>
+                        <div>
+                            <h3>Постное меню 2020</h3>
+                            <p>Для гостей соблюдающих Великий Пост</p>
+                            <a href="javascript:void(0)" class="news__more">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="news__item news__item--background"
+                        style="background-image: url('img/background-mini-1.png')">
+                        <time class="date">16.01.2020</time>
+                        <div>
+                            <h3>Новый режим работы в праздники</h3>
+                            <p>В будние дни с 11:00 до 15:00
+                                действует 20% скидка на все меню!!!</p>
+                            <a href="javascript:void(0)" class="news__more">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="news__item">
+                        <time class="date">16.01.2020</time>
+                        <div>
+                            <h3>Постное меню 2020</h3>
+                            <p>Для гостей соблюдающих Великий Пост</p>
+                            <a href="javascript:void(0)" class="news__more">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="page-section page-section--column">
+                <h2>Фотогалерея</h2>
+                <p class="page-section__description">Кафе Biblioteca – это место, где Вы можете насладиться как
+                    физической, так и духовной пищей одновременно. В ожидании ароматной пиццы
+                    или пышущей жаром лазаньи, гости имеют возможность погрузиться в чтение книг самой разной
+                    стилистики, начиная от «Учитесь правильно говорить»
+                    и заканчивая «Полным собранием сочинений» Ленина.</p>
+
+                <div class="page-section__gallery gallery">
+                    <div class="swiper-container gallery__slider">
+                        <div class="swiper-wrapper">
+                    <a data-fancybox="gallery" href="img/food-5.png" class="swiper-slide gallery__item">
+                        <img src="img/food-5.png" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/food-2.png" class="swiper-slide gallery__item">
+                        <img src="img/food-2.png" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/photo.png" class="swiper-slide gallery__item gallery__item--long">
+                        <img src="img/photo.png" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/photo-2.png" class="swiper-slide gallery__item gallery__item--long">
+                        <img src="img/photo-2.png" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/photo-3.png" class="swiper-slide gallery__item">
+                        <img src="img/photo-3.png" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/photo-4.png" class="swiper-slide gallery__item">
+                        <img src="img/photo-4.png" alt="">
+                    </a>
+                    </div>
+                    <div class="pagination pagination--gallery"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--column">
+                <h2>Гостевая книга</h2>
+                <div class="reviews">
+                    <div class="reviews__wrapper">
+                        <div class="swiper-container reviews__slider">
+                            <div class="swiper-wrapper">
+                                <article class="reviews__item swiper-slide">
+                                    <h3>Анна и Максим</h3>
+                                    <p class="reviews__text">Спасибо большое Данилу за прекрасное обслуживание!
+                                        Замечательно провели у Вас с мужем время. Огромная благодарность
+                                        поварам и всему персоналу! Размер порций и качество блюд искренне
+                                        порадовали!
+                                        Просим Данила повысить :)) и выплатить премию!
+                                        Хотя жалко, что опять закончилась граппа как раз перед приходом ...
+                                        Но в остальном все прекрасно, вы молодцы!</p>
+                                    <time class="date">16.01.2020</time>
+                                </article>
+                                <article class="reviews__item swiper-slide">
+                                    <h3>Анна и Максим</h3>
+                                    <p class="reviews__text">Спасибо большое Данилу за прекрасное обслуживание!
+                                        Замечательно провели у Вас с мужем время. Огромная благодарность
+                                        поварам и всему персоналу! Размер порций и качество блюд искренне
+                                        порадовали!
+                                        Просим Данила повысить :)) и выплатить премию!
+                                        Хотя жалко, что опять закончилась граппа как раз перед приходом ...
+                                        Но в остальном все прекрасно, вы молодцы!</p>
+                                    <time class="date">16.01.2020</time>
+                                </article>
+                                <article class="reviews__item swiper-slide">
+                                    <h3>Анна и Максим</h3>
+                                    <p class="reviews__text">Спасибо большое Данилу за прекрасное обслуживание!
+                                        Замечательно провели у Вас с мужем время. Огромная благодарность
+                                        поварам и всему персоналу! Размер порций и качество блюд искренне
+                                        порадовали!
+                                        Просим Данила повысить :)) и выплатить премию!
+                                        Хотя жалко, что опять закончилась граппа как раз перед приходом ...
+                                        Но в остальном все прекрасно, вы молодцы!
+                                    </p>
+                                    <time class="date">16.01.2020</time>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination pagination--reviews"></div>
+                    <button class="reviews__button reviews__button--prev"><span class="visually-hidden">Предыдущий слайд</span></button>
+                    <button class="reviews__button reviews__button--next"><span class="visually-hidden">Следующий слайд</span></button>
+                </div>
+            </section>
+            <section class="page-section page-section--column page-section--bg-white">
+                <h2>Группа компаний "Деком"</h2>
+                <p class="page-section__description">Кафе Biblioteca – это место, где Вы можете насладиться как
+                    физической, так и духовной пищей одновременно. В ожидании ароматной пиццы
+                    или пышущей жаром лазаньи, гости имеют возможность погрузиться в чтение книг самой разной
+                    стилистики, начиная от «Учитесь правильно говорить»
+                    и заканчивая «Полным собранием сочинений» Ленина.</p>
+                <div class="companies">
+                    <img src="img/biblioteca.png" alt="" class="companies__item">
+                    <img src="img/decom.png" alt="" class="companies__item">
+                    <img src="img/fonoteca.jpg" alt="" class="companies__item">
+                    <img src="img/dirigable.png" alt="" class="companies__item">
+                    <img src="img/yoga.png" alt="" class="companies__item">
+                    <img src="img/sostradanie.png" alt="" class="companies__item">
+                </div>
+            </section>
+            <section class="page-section page-section--bg-white">
+                <div class="page-section__half page-section__half--map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.735713522109!2d43.992959216235!3d56.31713428070814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d5b3255d03ef%3A0x87bbb6d356565e9a!2z0JTQuNGA0LjQttCw0LHQu9GM!5e0!3m2!1sru!2sru!4v1590927944352!5m2!1sru!2sru"
+                        width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="page-section__half page-section__half--text">
+                    <h2>Контакты</h2>
+                    <p>
+                        <span class="contacts-title">Адрес:</span>
+                        Нижний Новгород, ул. Большая Покровская, д. 46 (3-ий этаж книжного магазина «Дирижабль)
+                    </p>
+                    <p>
+                        <span class="contacts-title">Режим работы:</span>
+                        11.00 – 22.00
+                    </p>
+                    <p>
+                        <span class="contacts-title">Телефон:</span>
+                        <a class="contacts-link" href="tel:+78314336934">+7 (831) 433-69-34</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div>
+                <p class="page-footer__text">© 2006–2020 кафе «Библиотека».</p>
+                <a href="javascript:void(0)" class="page-footer__policy">Политика конфиденциальности</a>
+            </div>
+            <div class="tripadvisor tripadvisor--footer">
+                <img src="img/tripadvisor.png" alt="">
+                <div class="tripadvisor__rating rating rating--footer">
+                    <div class="rating__mark">
+                        <div class="rating__item"><svg viewBox="0 0 32 32">
+                                <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                            </svg></div>
+                        <div class="rating__item"><svg viewBox="0 0 32 32">
+                                <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                            </svg></div>
+                        <div class="rating__item"><svg viewBox="0 0 32 32">
+                                <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                            </svg></div>
+                        <div class="rating__item"><svg viewBox="0 0 32 32">
+                                <circle r="16" cx="16" cy="16" stroke-dasharray="100 100"></circle>
+                            </svg></div>
+                        <div class="rating__item"><svg viewBox="0 0 32 32">
+                                <circle r="16" cx="16" cy="16" stroke-dasharray="50 100"></circle>
+                            </svg></div>
+                    </div>
+                    <p class="rating__quantity">
+                        <span>947</span>
+                        отзывов
+                    </p>
+                </div>
+            </div>
+    <p class="page-footer__text">Разработка сайта – <span class="page-footer__ad-heads">AD HEADS</span></p>
+    </footer>
+    </div>
+</body>
+
+</html>
